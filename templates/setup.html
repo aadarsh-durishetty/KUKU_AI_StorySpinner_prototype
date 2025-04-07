@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Setup Your Story</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 60px;
+            background: linear-gradient(135deg, #F5F5F5, #E0E0E0);
+            color: #333333;
+        }
+        h2 {
+            font-size: 28px;
+            color: #FF6200;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        form {
+            max-width: 450px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-size: 16px;
+            color: #333;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        select, input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #00C4B4;
+            border-radius: 8px;
+            font-size: 16px;
+            background: #F9F9F9;
+            transition: border-color 0.3s;
+        }
+        select:focus, input:focus {
+            border-color: #FF6200;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #FF6200;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <h2>Create Your Story</h2>
+    <form method="POST">
+        <label>Mood:</label>
+        <select name="mood">
+            <option value="Uplifting">Uplifting</option>
+            <option value="Mysterious">Mysterious</option>
+            <option value="Scary">Scary</option>
+        </select>
+        <label>Genre:</label>
+        <select name="genre">
+            <option value="Thriller">Thriller</option>
+            <option value="Mythology">Mythology</option>
+            <option value="Romance">Romance</option>
+        </select>
+        <label>Prompt (optional):</label>
+        <input type="text" name="prompt" placeholder="e.g., A detective in ancient India">
+        <button type="submit">Generate Story</button>
+    </form>
+</body>
+</html>
